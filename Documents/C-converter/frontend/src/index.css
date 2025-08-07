@@ -1,0 +1,20 @@
+/* frontend/src/index.css */
+@import "tailwindcss";
+
+body {
+    background-color: #242427; /* brand-dark-dark */
+    color: #ffffff; /* gray-300 */
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom animations for typing effect */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
