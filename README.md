@@ -12,13 +12,54 @@ This tool helps you convert videos or images into C structs suitable for use in 
 - **Visual Feedback:** Generates preview images of the processed frames in the `output_images` folder.
 
 ---
-## 🚀 Getting Started
-### Requirements
-Make sure you have Python 3 installed. Then, install the necessary packages for converting a `.mov` file to a `.mp4` file using pip, it might also need you to install FFmpeg using homebrew:
-
+## 🚀 Getting Started 
+### 1. Run Backend
+Open your terminal and navigate to the backend folder in the project folder:
 ```bash
-pip install opencv-python Pillow
+cd /path/to/your/C-Converter/backend
 ```
+Then create and activate a Python virtual environment:
+```bash
+# Create the environment (only needs to be done once)
+python3 -m venv venv
+
+# Activate the environment
+source venv/bin/activate
+```
+Install the required packages. 
+```bash
+pip3 install -r requirements.txt
+```
+
+Run the server
+```bash
+python3 app.py
+```
+### 1. Run Frontend
+Navigate to the frontend folder in the project folder:
+```bash
+cd /path/to/your/C-Converter/frontend
+```
+
+Install the required Node packages.
+```bash
+yarn install
+```
+Install the required Node packages.
+```bash
+yarn install
+```
+You may also need to install any missing packages that cause errors, for example:
+```bash
+yarn add lucide-react
+```
+Run the frontend development server.
+```bash
+yarn dev
+```
+
+The application will now be running and accessible in your browser, like eg. `http://localhost:5173`
+
 ### File Structure
 | Folder / File | Description |
 | --- | --- |
