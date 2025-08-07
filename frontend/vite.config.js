@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    // This proxy tells Vite to forward API requests to your Python backend
+    // This proxy tells Vite to forward API requests to your Python backend (development only)
     proxy: {
       // For the main file upload
       '/upload': 'http://127.0.0.1:5000',
@@ -16,5 +16,10 @@ export default defineConfig({
       // For serving the generated video files
       '/video': 'http://127.0.0.1:5000',
     }
+  },
+  // Add build configuration for production
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets'
   }
 })
